@@ -14,19 +14,16 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.logo-container img.clinic-logo {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
 .logo-container img.clinic-name {
-    width: 250px;
-    margin-bottom: 10px;
+    width: 400px;   /* Increased size */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 .clinic-tagline {
     color: #555;
-    font-size: 14px;
+    font-size: 16px; /* slightly larger tagline */
     margin: 0;
 }
 
@@ -122,7 +119,12 @@ footer {
         columns: 1;
         padding-left: 20px;
     }
+
     .logo-container img.clinic-name {
-        width: 180px;
+        width: 250px; /* smaller on mobile */
+    }
+
+    .clinic-tagline {
+        font-size: 14px;
     }
 }
