@@ -1,60 +1,102 @@
+/* General Body */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f6f2ea;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdfdfd;
     color: #333;
 }
 
-header {
-    background-color: #1f6f43;
-    color: white;
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-nav {
-    background-color: #5b2146;
-    text-align: center;
-    padding: 10px;
+.logo-container img.clinic-logo {
+    width: 80px;
+    margin-bottom: 10px;
 }
 
-nav a {
-    color: white;
+.logo-container img.clinic-name {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.clinic-tagline {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #f0f8f5;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.navbar a {
+    color: #2f7d6d;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    border-bottom: 2px solid #2f7d6d;
 }
 
-section {
+/* Sections */
+.section {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #2f7d6d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Doctor Section */
+.doctor {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 30px;
     padding: 20px;
 }
 
-.doctor {
-    background-color: #e8f5ef;
-    text-align: center;
-}
-
+/* Services */
 .services ul {
     columns: 2;
     list-style-type: square;
+    padding-left: 40px;
 }
 
+/* Timings */
 .timings {
-    background-color: #f0e1ec;
+    background-color: #f8fdfb;
+    border-radius: 10px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 
+/* Footer */
 footer {
-    background-color: #1f6f43;
+    background-color: #2f7d6d;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
 }
+
+/* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -67,9 +109,20 @@ footer {
     height: 55px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
 }
 
 .whatsapp-float img:hover {
     transform: scale(1.1);
-    transition: 0.3s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services ul {
+        columns: 1;
+        padding-left: 20px;
+    }
+    .logo-container img.clinic-name {
+        width: 180px;
+    }
 }
